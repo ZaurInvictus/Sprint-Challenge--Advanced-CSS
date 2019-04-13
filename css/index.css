@@ -215,6 +215,115 @@ footer {
   justify-content: center;
   align-items: center;
 }
+/* CONTACT PAGE */
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  height: 440px;
+  margin: 50px 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.contact-form:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.contact-form form {
+  padding: 25px 20px;
+}
+@media (max-width: 500px) {
+  .contact-form form {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+  }
+}
+.contact-form input {
+  width: 240px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(16, 62, 109, 0.4);
+}
+.contact-form input:first-child {
+  margin: 15px 15px 15px 0;
+}
+@media (max-width: 500px) {
+  .contact-form input {
+    width: 100%;
+  }
+}
+.contact-form textarea {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(16, 62, 109, 0.4);
+}
+@media (max-width: 500px) {
+  .contact-form textarea {
+    height: 130px;
+  }
+}
+.contact-form .address {
+  padding: 20px;
+  width: 260px;
+  background-color: #103F6D;
+  color: #fff;
+  line-height: 45px;
+}
+.contact-form .address h2 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .contact-form .address {
+    display: none;
+  }
+}
+.contact-form form h2 {
+  font-size: 2.5rem;
+}
+.contact-form address p {
+  line-height: 35px;
+}
+.contact-form .form-submit button {
+  border-radius: 12px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding: 10px 20px;
+  outline: none;
+  background: #103F6D;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.contact-form .form-submit button:hover {
+  background: #103F6D;
+}
+@media (max-width: 500px) {
+  .contact-form .form-submit button {
+    margin-top: 10px;
+  }
+}
+.contact-form form ion-icon {
+  vertical-align: middle;
+  font-size: 30px;
+}
+.contact-form address ion-icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.contact-form .social-icons {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.contact-form .social-icons ion-icon {
+  margin: 5px 10px;
+}
 .home .intro img {
   border-radius: 5px;
 }
