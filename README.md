@@ -34,13 +34,40 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive layouts borrow from the speed of a fixed layout but accommodate different devices at specific breakpoints in design. For example, an adaptive website may have hard coded pixels used for layout using media queries for different devices.
+Features of Adaptive Layout:
+Design is often divided among desktop, tablet, or phone
+Media queries are used
+Layout widths are still hard coded at each media query
+Quick deployment for specific devices
+
+Responsive layouts combine features of fixed, adaptive, and fluid websites together into one seamless experience. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
+Features of Responsive Layout
+Design is often divided among desktop, tablet, or phone
+Responsive units are used throughout the site
+Media queries are used
+Site accommodates thousands of devices and takes longer to build
+
+
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first implies you will design and code for a mobile device first and expand layout or features as you gain more screen space toward desktop. In desktop first you will do everything vice versa.
+For CSS implementations mobile first usually means your general styles are pointed at the phone and you utilize min-width (In desktop first max-width) media queries to layer on more complexity as you grow toward desktop views.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    
+Sets website fon-size 1 rem to 10px.
+// 10px/16px = 62.5% => 1rem = 10px
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is simply a more robust syntax for CSS written in a different language. That language is then compiled into normal CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like the idea of diving code to different files and write modular, reusable code. 
+Actually I dont have any troubles with preprocessing. Maybe functions a little bit more complicated than the other concepts.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
